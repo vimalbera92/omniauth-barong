@@ -45,8 +45,10 @@ module OmniAuth
             email:  raw_info['email'],
             role:   raw_info['role'],
             level:  raw_info['level'],
-            state:  raw_info['state']
+            state:  raw_info['state'],
+            referred_by_id: raw_info['referred_by_id']
         }
+       
       end
 
       def raw_info
